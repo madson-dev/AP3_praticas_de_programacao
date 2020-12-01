@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz AP3</title>
+        <meta name="view" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="index-caixa custom-caixa ">
+            <h2>Quiz: Teste de raciocínio lógico</h2>
+            <img height="240px" src="box-index.jpg">
+            <p>Total de questões a serem respondidas: <span class="total-questao"></span></p>
+            <button type="button" class="btn" onclick="iniciarQuiz()">Iniciar Quiz</button>
+        </div>
+       
+    <div class="caixa-quiz custom-caixa ocultar-box">
+            <img class="img" src="corpo.jpg">
+            <div class="numero-questao">
+            
+            </div>
+            
+            <div class="questao-descricao">
+                
+            </div>
+            <div class="opcoes-questao opcao">
+
+            </div>
+            <div class="proxima-questao-btn">
+                <button type="button" class="btn" onclick="proximaQuestao(); proximaImagem();">Próxima</button>
+            </div>
+            <div class="questao-atual">
+            
+            </div>
+        </div>
+        
+        <div class="resultado custom-caixa ocultar-box">
+            <h1>Resultado Final</h1>
+            <table>
+                <tr>
+                    <td>Total de perguntas</td>
+                    <td><span class="total-perguntas"></span></td>
+                </tr>
+                <tr>
+                    <td>Acerto</td>
+                    <td><span class="total-acerto"></span></td>
+                </tr>
+                <tr>
+                    <td>Erro</td>
+                    <td><span class="total-erro"></span></td>
+                </tr>
+                <tr>
+                    <td>Portuação total</td>
+                    <td><span class="total-pontuacao"></span></td>
+                </tr>
+            </table>    
+            <button type="button" class="btn" onclick="jogarNovamente()">Jogue Novamente</button>
+            <button type="button" class="btn" onclick="voltarMenu()">Voltar ao Menu</button>
+        </div>
+        <script src="questoes.js"></script>
+        <script src="app-quiz.js"></script>
+        
+    </body>
+</html>
